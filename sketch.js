@@ -109,7 +109,7 @@ function colisaoRaqueteBiblioteca(x, y){
   }
 } 
 
-function movimentaRaqueteOponente(){
+/*function movimentaRaqueteOponente(){
   if (keyIsDown(87)){
     yRaqueteOponente -= 10;
   }
@@ -117,6 +117,12 @@ function movimentaRaqueteOponente(){
     yRaqueteOponente += 10;
   }
 }
+*/
+function movimentaRaqueteOponente() {
+  velocidadeYOponente = yBolinha - yRaqueteOponente - raqueteComprimento / 2 - 30;
+  yRaqueteOponente += velocidadeYOponente;
+  }
+  
 
 function incluiPlacar(){
   stroke(255);
